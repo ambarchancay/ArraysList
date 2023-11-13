@@ -3,17 +3,21 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Figura> listaFiguras = new ArrayList<>();
+        ArrayList<Vehiculo> listaVehiculos = new ArrayList<>();
 
         // Agrega instancias de las subclases a la lista
-        listaFiguras.add(new Circulo("Círculo 1", 5.0));
-        listaFiguras.add(new Rectangulo("Rectángulo 1", 4.0, 6.0));
+        listaVehiculos.add(new Coche("Coche1"));
+        listaVehiculos.add(new Moto("Moto1"));
 
-        // Itera sobre la lista y muestra información sobre cada figura
-        for (Figura figura : listaFiguras) {
-            System.out.println("Nombre: " + figura.getNombre());
-            System.out.println("Área: " + figura.calcularArea());
+        // Itera sobre la lista y muestra información sobre cada vehículo
+        for (Vehiculo vehiculo : listaVehiculos) {
+            System.out.println("Tipo de Combustible: " + vehiculo.obtenerTipoCombustible());
             System.out.println("------------------");
         }
     }
 }
+
+
+
+
+
